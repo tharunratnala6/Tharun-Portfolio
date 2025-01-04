@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>&lt; Tharun Ratnala /&gt;</h1>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#education">Education</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#certifications">Certifications</a></li>
+                    <li><a href="#contact">Contact Me</a></li>
+                </ul>
+            </nav>
+            <a href="https://github.com/tharunratnala6" class="github-profile">Github Profile</a>
+        </div>
+    </header>
+    <main>
+        <!-- About Section -->
+        <section id="about" class="section hero">
+            <div class="hero-content">
+                <div class="text">
+                    <h2>Hi,</h2>
+                    <h1>I am Ratnala Tharun</h1>
+                    <h3>I am a <span class="highlight">Student</span></h3>
+                    <p>I’m a motivated Computer Science Engineering student passionate about learning and delivering quality results. With strong organizational skills and a growth mindset, I’m eager to take on new challenges and gain hands-on experience through internships and real-world projects. Excited for my first work opportunity—let’s create something great!</p>
+                    <a href="C:\Users\tharu\OneDrive\Desktop\Tharun Resume.pdf" class="resume-button">My Resume</a>
+                </div>
+                <div class="profile-pic">
+                    <img src="C:\Users\tharu\OneDrive\Desktop\profile-pic.png" alt="Profile Picture">
+                </div>
+            </div>
+        </section>
+
+        <!-- Education Section -->
+        <section id="education">
+            <h2>Education</h2>
+            <div class="timeline">
+                <div class="timeline-item" onmouseover="toggleContent(this)" onmouseout="toggleContent(this)">
+                    <div class="timeline-content">
+                        <h3>CMR Institute of Technology, Hyderabad</h3>
+                        <p>Bachelor of Engineering – BE, Computer Science and Engineering (AI&ML)</p>
+                        <p>Grade: 7.80 CGPA</p>
+                        <p class="additional-info">I am a 3rd-year Engineering student seeking internship opportunities and preparing for my first professional role.</p>
+                    </div>
+                    <div class="timeline-year-box">
+                        <span>2022 – 2026</span>
+                    </div>
+                </div>
+                <div class="timeline-item right" onmouseover="toggleContent(this)" onmouseout="toggleContent(this)">
+                    <div class="timeline-content">
+                        <h3>Resonance Junior College</h3>
+                        <p>TSBIE (XII), Science (MPC)</p>
+                        <p>Grade: 91%</p>
+                        <p class="additional-info">Completed intermediate education with a focus on Physics, Chemistry, and Mathematics. Achieved 91% in my 12th board examinations.</p>
+                    </div>
+                    <div class="timeline-year-box">
+                        <span>2020 – 2022</span>
+                    </div>
+                </div>
+                <div class="timeline-item" onmouseover="toggleContent(this)" onmouseout="toggleContent(this)">
+                    <div class="timeline-content">
+                        <h3>High School in Sri Chaitanya School</h3>
+                        <p>10th Board</p>
+                        <p>Grade: 85%</p>
+                        <p class="additional-info">Completed schooling with strong performance in core subjects, building a solid foundation for higher education.</p>
+                    </div>
+                    <div class="timeline-year-box">
+                        <span>2018 – 2020</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="section">
+            <h2>Projects</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <h3>Automated Smart Attendance</h3>
+                        <p>Developed an attendance tracking system that marks attendance automatically, prevents proxies, and accurately detects multiple faces using Python and OpenCV.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <h3>Portfolio Website</h3>
+                        <p>A personal portfolio website built using HTML, CSS, and JavaScript.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Certifications Section -->
+        <section id="certifications" class="section">
+            <h2>Certifications</h2>
+            <div class="certificates-container">
+                <div class="certificate-box">
+                    <a href="https://digitalskills.iitmpravartak.org.in/verify/cert/3z91Vi67268p2B15FG" target="_blank">IITM GUVI Python Certified</a>
+                </div>
+                <div class="certificate-box">
+                    <a href="https://www.mygreatlearning.com/certificate/YITZEJGQ" target="_blank">Great Learning Java Certified</a>
+                </div>
+                <div class="certificate-box">
+                    <a href="https://www.coursera.org/account/accomplishments/verify/KRFBHMLNY7VA" target="_blank">Coursera Python Certified</a>
+                </div>
+                <div class="certificate-box">
+                    <a href="https://aictecert.eduskillsfoundation.org/pages/home/verify.php?cert=659a4a39ccd266a7406feb3fddf69e99" target="_blank">AICTE AIML Virtual Intern</a>
+                </div>
+                <div class="certificate-box">
+                    <a href="https://aictecert.eduskillsfoundation.org/pages/home/verify.php?cert=c1ca905e0334738ad74e7c2f5dfb386e" target="_blank">AICTE Android Developer Intern</a>
+                </div>
+                <div class="certificate-box">
+                    <a href="https://www.coursera.org/account/accomplishments/verify/BT98LTAYY738" target="_blank">DeepLearning AI Certified</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section">
+            <h2>Contact Me</h2>
+            <p>If you want to get in touch, feel free to reach out!</p>
+            <div class="social-icons">
+                <a href="https://www.linkedin.com/in/tharunratnala6" target="_blank" class="social-icon">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/0/01/LinkedIn_Logo.svg" alt="LinkedIn" style="width: 32px; height: 32px;">
+                </a>
+                <a href="https://github.com/tharunratnala6" target="_blank" class="social-icon">
+                    <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="GitHub" style="width: 32px; height: 32px;">
+                </a>
+                <a href="mailto:tharunratnala6@gmail.com" class="social-icon">
+                    <i class="fa fa-envelope"></i>
+                </a>
+            </div>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

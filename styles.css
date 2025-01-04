@@ -1,0 +1,373 @@
+/* General Styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #0f0f28;
+    color: #fff;
+    padding-left: 0.8cm;
+    padding-right: 0.8cm;
+}
+
+/* Header Styles */
+header {
+    background-color: #0f0f28;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 10px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: calc(100% - 8cm);
+    margin: 0 auto;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+header h1 {
+    font-size: 24px;
+    color: #fff;
+    margin: 0;
+}
+
+header nav {
+    margin-left: 50px;
+}
+
+header .nav-links {
+    display: flex;
+    gap: 20px;
+}
+
+header .nav-links li {
+    display: inline;
+}
+
+header .nav-links li a {
+    text-decoration: none;
+    color: #aaa;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+header .nav-links li a:hover {
+    color: #fff;
+}
+
+header .github-profile {
+    background: transparent;
+    border: 1px solid #fff;
+    color: #fff;
+    padding: 8px 16px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+header .github-profile:hover {
+    background: #fff;
+    color: #0f0f28;
+}
+
+/* Section Styles */
+.section {
+    padding: 50px;
+    text-align: center;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    max-width: calc(100% - 8cm);
+    margin: 0 auto;
+}
+
+/* Hero Section */
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
+    padding: 50px;
+    max-width: calc(100% - 8cm);
+    margin: 0 auto;
+}
+
+.hero-content {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.hero .text {
+    flex: 1;
+    max-width: 500px;
+    text-align: left;
+}
+
+.hero h2, .hero h1, .hero h3 {
+    margin: 0;
+}
+
+.hero h2 {
+    font-size: 2.5rem;
+}
+
+.hero h1 {
+    font-size: 3rem;
+}
+
+.hero h3 {
+    font-size: 2rem;
+    margin: 20px 0;
+}
+
+.hero .highlight {
+    color: #8a2be2;
+}
+
+.hero p {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.hero .resume-button {
+    background-color: #8a2be2;
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: white;
+    text-decoration: none;
+    transition: background 0.3s;
+}
+
+.hero .resume-button:hover {
+    background-color: #6a1ebc;
+}
+
+.hero .profile-pic {
+    flex-shrink: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 20px;
+}
+
+.hero .profile-pic img {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+/* Education Section */
+#education {
+    padding: 50px 20px;
+    color: #fff;
+}
+
+#education h2 {
+    font-size: 2.5rem;
+    color: #8a2be2;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+#education p {
+    color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.timeline {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.timeline-item {
+    display: flex;
+    flex-direction: column; /* Stack content vertically */
+    align-items: center; /* Center-align horizontally */
+    justify-content: center; /* Center-align vertically */
+    margin: 20px 0;
+    padding: 20px;
+    background: #3e3d3f;
+    border-radius: 10px;
+    position: relative;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s ease;
+}
+
+.timeline-item .timeline-content {
+    flex: 1;
+    padding: 10px;
+}
+
+.timeline-item .timeline-year-box {
+    background-color: #8a2be2;
+    padding: 10px;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+/* Updated CSS for second box - Year at bottom */
+.timeline-item.right {
+    display: flex;
+    flex-direction: column; /* Align content vertically */
+    justify-content: space-between; /* Push year box to the bottom */
+}
+
+.timeline-item.right .timeline-year-box {
+    margin-top: auto; /* Push year box to the bottom */
+    text-align: right; /* Align year text to the right */
+}
+
+.additional-info {
+    display: none;
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 0.9rem;
+    margin-top: 10px;
+}
+
+.timeline-item:hover .additional-info {
+    display: block;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.timeline-item:hover {
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    transform: scale(1.02);
+}
+
+/* Projects Section */
+#projects .timeline {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+#projects .timeline-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    background: #3e3d3f;
+    border-radius: 10px;
+    padding: 20px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+#projects .timeline-item:hover {
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    transform: scale(1.02);
+}
+
+#projects .timeline-item .timeline-content {
+    margin-bottom: 10px;
+}
+
+#projects .timeline-item .timeline-year-box {
+    background-color: #8a2be2;
+    padding: 10px;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+/* Certificates Section */
+.certificates-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.certificate-box {
+    background-color: #3e3d3f;
+    border: 1px solid #8a2be2;
+    border-radius: 10px;
+    padding: 15px 20px;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.certificate-box a {
+    text-decoration: none;
+    color: #8a2be2;
+    font-size: 1rem;
+}
+
+.certificate-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+#projects h2,
+#certifications h2 {
+    font-size: 2.5rem;  /* Same size as Contact Me */
+    color: #8a2be2;     /* Same color as Contact Me */
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+/* Contact Section */
+#contact {
+    padding: 50px 20px;
+    color: #fff;
+}
+
+#contact h2 {
+    font-size: 2.5rem;
+    color: #8a2be2;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+#contact p {
+    text-align: center;
+    margin-bottom: 20px;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.social-icon {
+    font-size: 2rem;
+    color: #8a2be2;
+    text-decoration: none;
+    transition: transform 0.3s, color 0.3s;
+}
+
+.social-icon:hover {
+    transform: scale(1.2);
+    color: #fff;
+}
+
+/* Font Awesome Icon Styling */
+.fa {
+    font-size: 2rem;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #0f0f28;
+    color: #aaa;
+    padding: 20px;
+    text-align: center;
+    font-size: 14px;
+}
